@@ -1,0 +1,27 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Ellipse?>
+<Group fx:controller="sample.Controller"
+       xmlns:fx="http://javafx.com/fxml" >
+
+    <Ellipse fx:id="ellipse"/>
+
+    <GridPane alignment="center" hgap="10" vgap="10">
+
+        <Label text="centerX" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+        <TextField fx:id="centerXField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+
+        <Label text="centerY" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+        <TextField fx:id="centerYField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+
+        <Label text="radiusX" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+        <TextField fx:id="radiusXField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+
+        <Label text="radiusY" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+        <TextField fx:id="radiusYField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+
+        <Button onAction="#calculateEllipse" text="calculate"
+                GridPane.rowIndex="4" GridPane.columnIndex="0" />
+    </GridPane>
+</Group>
